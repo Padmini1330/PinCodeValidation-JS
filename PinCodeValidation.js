@@ -1,4 +1,4 @@
-const pincodeRegex = RegExp("^[0-9]{6}$");
+const pincodeRegex = RegExp("^[0-9]{3}\\s{0,1}[0-9]{3}$");
 
 function validatePincode(pincode)
 {
@@ -11,8 +11,9 @@ function validatePincode(pincode)
 try
 {
     validatePincode("400088");
-    validatePincode("40008B");
-    validatePincode("400");
+    validatePincode("400 088");
+    validatePincode("400111");
+    validatePincode("A00111");
 }
 
 catch(e)
