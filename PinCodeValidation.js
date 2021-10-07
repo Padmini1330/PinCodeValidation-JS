@@ -14,6 +14,7 @@ try
     validatePincode("400081");
     validatePincode("400");
 }
+
 catch(e)
 {
     console.error(e);
